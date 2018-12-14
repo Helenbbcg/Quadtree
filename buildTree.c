@@ -64,7 +64,7 @@ void destroyTree(Node *parent){
 	if(parent->child[0]==NULL)
         {
         free(parent);
-	return;
+        return;
         }
 	else				
             {for(i=0;i<4;i++)
@@ -80,9 +80,8 @@ void destroyTree(Node *parent){
 void removeChildren (Node *parent){
 	int i;
 	for(i=0;i<4;i++){
-                free(parent->child[i]);
-		parent->child[i]=NULL;
-		
+        free(parent->child[i]);
+		parent->child[i]=NULL;	
 	}
 }
 
