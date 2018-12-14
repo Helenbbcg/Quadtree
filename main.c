@@ -16,16 +16,19 @@ int main( int argc, char **argv ) {
   // make the head node
   head = makeNode( 0.0,0.0, 0 );
   // make a tree
-  //Task1
+  
+  /*//Task1
   growTree(head);
   makeChildren(head->child[0]);
   writeTree(head);
-  //destroyTree(head);
+  destroyTree(head);*/
   
   
   /*//Task2-1
   growTree(head);
   growTree(head);
+  //makeChildren(head->child[0]);
+  //makeChildren(head->child[1]);
   //Free nodes from a level 1 node
   removeChildren(head->child[0]);
   writeTree(head);
@@ -35,21 +38,22 @@ int main( int argc, char **argv ) {
   
 /*//Task2-2
 growTree(head);
+makeChildren(head);
 makeChildren(head->child[0]);
-makeChildren(head->child[1]);
-removeChildren(head->child[0]);
+//makeChildren(head->child[0]->child[0]);
+//removeChildren(head->child[0]);
 writeTree(head);
 destroyTree(head);*/
 
 
-/*//Task3
+//Task3
 growTree(head);
 growTree(head);
 growTree(head);
 makeFlag(head);
 changeNode(head);
 adapt(head);
-writeTree(head);*/
+writeTree(head);
 
 
   //destroyTree(head);
